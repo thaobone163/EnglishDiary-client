@@ -15,12 +15,13 @@
 
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen">
     <link href="css/font-awesome.css" type="text/css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/game-style.css">
 
     <script src="js/modernizr.js"></script>
     <script src="js/respond.js"></script>
 </head>
 <body>
-<div class="container">
+<div class="container" id="wrapper">
 
     <!-- header -->
     <header>
@@ -78,65 +79,52 @@
         </nav>
         <div class="clearfix"></div>
     </header>
-
     <!-- end header -->
 
     <!-- page content area -->
     <section id="content" class="col-lg-7 col-md-8 col-sm-12">
 
         <div class="cloud">
-            <h1>Contact</h1>
+            <h1>Game Test</h1>
         </div>
 
         <div class="content-bg">
-            <div class="col-lg-6 col-sm-12">
-                <span class="fa"></span> <span id="address">144 Xuan Thuy, Cau Giay, Ha Noi</span><br/>
-                <!-- input your address on this line -->
-                <span class="fa"></span> 0398188916<br/>
-                <span class="fa"></span> thaobone163@gmail.com<br/>
-                <span class="fa"></span> ngochoa11072001@gmail.com
-            </div>
-            <div class="col-lg-6 col-sm-12">
-                <div class="fa social-media">
-                    <a href="#">&#xf0d4;</a>
-                    <a href="#">&#xf082;</a>
-                    <a href="#">&#xf099;</a>
-                    <a href="#">&#xf16d;</a>
-                    <a href="#">&#xf08c;</a>
-                    <a href="#">&#xf0d2;</a>
-                    <a href="#">&#xf166;</a>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-<!--            <div id="map">-->
-
-<!--            </div>&lt;!&ndash; end #map &ndash;&gt;-->
-            <div class="clearfix"></div>
-
+            <h2 class="entry-title post-title">Topic: Alphabet</h2><br>
+            <p align="center"> Cách chơi: Bé hãy chọn những đáp án phù hợp với hình ảnh minh họa nhé! <br>
+            Lưu ý rằng mỗi câu hỏi có 15 phút để trả lời các bé nhé!</p>
             <div class="separator"></div>
+            <div class="container">
+                <div class="content">
+                    <h1 class="header">Let's play</h1>
+                    <div id="time">00:15</div>
+                    <br>
+                </div>
 
-            <div id="note"></div>
-            <form class="w-clearfix" id="ajax-contact-form" action="http://ithemewordpress.com/">
-                <div class="col-12">
-                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                <div class="question">
+                    <p id="message" class="message"></p>
+                    <h2 id="question">Click to start</h2>
                 </div>
-                <div class="col-6">
-                    <input type="text" name="name" placeholder="Your Name"/>
+                <div class="choice">
+                    <button onclick="selected('a')" id="buttonA" class="item">A</button>
+                    <button onclick="selected('b')" id="buttonB" class="item">B</button>
+                    <button onclick="selected('c')" id="buttonC" class="item">C</button>
+                    <button onclick="selected('d')" id="buttonD" class="item">D</button>
                 </div>
-                <div class="col-6">
-                    <input type="text" name="email" placeholder="Your Email"/>
-                </div>
-                <div class="col-12">
-                    <input class="button red" type="submit" value=" SEND MESSAGE"/>
-                </div>
-            </form>
+                <button id="control" class="target" onclick="handle()">Start</button>
+            </div>
+            <div class="separator"></div>
+            <div class="clearfix"><br/></div>
+            <div class="clearfix"><br/></div>
+            <div class="col-12">
+                <a href="lesson.html" class="button green pull-left"><span>&#xf137;</span>Quay lại bài học</a>
+                <a class="button red pull-right">Hoàn thành bài học</a>
+            </div>
             <div class="clearfix"></div>
         </div>
-
     </section>
     <!-- end page content area -->
 
-    <div class="clearfix" id="wrapper"></div>
+    <div class="clearfix"></div>
 </div>
 <!-- end #wrapper -->
 
@@ -152,6 +140,9 @@
                 <a href="#">&#xf0d2;</a>
                 <a href="#">&#xf166;</a>
             </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 footer-links">
+                <a href="contact.html">Liên hệ</a>
+            </div>
         </div>
     </div>
     <div class="footer-bottom">
@@ -165,6 +156,5 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/gmaps.js"></script>
 </body>
 </html>
