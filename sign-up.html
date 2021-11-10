@@ -15,13 +15,12 @@
 
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen">
     <link href="css/font-awesome.css" type="text/css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="css/game-style.css">
 
     <script src="js/modernizr.js"></script>
     <script src="js/respond.js"></script>
 </head>
 <body>
-<div class="container" id="wrapper">
+<div class="container">
 
     <!-- header -->
     <header>
@@ -41,89 +40,85 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <div class="choose">
                     <div>
-                        <a href="index.html">Trang chủ</a>
+                        <a href="">Trang chủ</a>
                     </div>
                     <div class="dropdown-1">
                         <a href="">Khóa học</a>
                         <div class="dropdown-1-content">
-                            <a href="basic-course.html">Cơ bản</a>
-                            <a href="Advanced-course.html">Nâng cao</a>
+                            <a href="">Cơ bản</a>
+                            <a href="">Nâng cao</a>
                         </div>
                     </div>
                     <div>
-                        <a href="progress.html">Lộ trình</a>
+                        <a href="">Lộ trình</a>
                     </div>
                     <div class="dropdown-1">
                         <a href="">Học & Chơi</a>
                         <div class="dropdown-1-content">
-                            <a href="readStories.html">Đọc truyện</a>
-                            <a href="watchFilm.html">Phim ngắn</a>
-                            <a href="listenMusic.html">Bài hát</a>
+                            <a href="">Đọc truyện</a>
+                            <a href="">Phim ngắn</a>
+                            <a href="">Bài hát</a>
                         </div>
                     </div>
                     <div>
-                        <a href="contact.html">Tra từ nhanh</a>
+                        <a href="">Tra từ nhanh</a>
                     </div>
                 </div>
             </div>
+
             <div id="info" class="dropdown-2">
-                <a href="">Cá nhân</a>
-                <div class="dropdown-2-content">
-                    <div>
-                        <a href="info.html">Thông tin</a>
-                        <a href="login.html">Đăng xuất</a>
-                    </div>
-                </div>
+                <a href="">Sign up</a>
             </div>
             <!-- /.navbar-collapse -->
         </nav>
         <div class="clearfix"></div>
     </header>
+
     <!-- end header -->
 
     <!-- page content area -->
     <section id="content" class="col-lg-7 col-md-8 col-sm-12">
 
         <div class="cloud">
-            <h1>Game Test</h1>
+            <h1>SIGN UP</h1>
         </div>
 
         <div class="content-bg">
-            <h2 class="entry-title post-title">Topic: Alphabet</h2>
-            <p align="center"> Cách chơi: Bé hãy chọn từ tiếng Anh phù hợp với nghĩa tiếng Việt nhé! <br>
-            Lưu ý rằng mỗi câu hỏi có 15 phút để trả lời các bé nhé!</p>
             <div class="separator"></div>
-            <div class="container">
-                <div class="content">
-                    <h1 class="header">Let's play</h1>
-                    <div id="time">00:15</div>
-                    <br>
-                </div>
 
-                <div class="question">
-                    <p id="message" class="message"></p>
-                    <h2 id="question">Click to start</h2>
+            <form>
+                <div class="col-6">
+                    <input type="text" name="fullName" placeholder="Your full name"/>
                 </div>
-                <div class="choice">
-                    <button onclick="selected('a')" id="buttonA" class="item">A</button>
-                    <button onclick="selected('b')" id="buttonB" class="item">B</button>
-                    <button onclick="selected('c')" id="buttonC" class="item">C</button>
-                    <button onclick="selected('d')" id="buttonD" class="item">D</button>
+                <div class="col-6">
+                    <input type="text" name="age" placeholder="Your age"/>
                 </div>
-                <button id="control" class="target" onclick="handle()">Start</button>
-            </div>
-            <div class="separator"></div>
-            <div class="clearfix"><br/></div>
-            <div class="clearfix"><br/></div>
-            <div class="col-12">
-                <a href="lesson.html" class="button green pull-left"><span>&#xf137;</span>Quay lại bài học</a>
-            </div>
+                <div class="col-6">
+                    <input type="text" name="parentFullName" placeholder="Your mom/dad's full name"/>
+                </div>
+                <div class="col-6">
+                    <input type="text" name="phone" placeholder="Your mom/dad's phone"/>
+                </div>
+                <div class="col-6">
+                    <input type="text" name="email" placeholder="Your mom/dad's email"/>
+                </div>
+                <div class="col-6">
+                    <input type="text" name="username" placeholder="Username"/>
+                </div>
+                <div class="col-6">
+                    <input type="password" name="password" placeholder="Password"/>
+                </div>
+                <div class="col-12">
+                    <a href="login.html" class="button red">Submit and login</a>
+                </div>
+            </form>
             <div class="clearfix"></div>
         </div>
+
     </section>
     <!-- end page content area -->
 
-    <div class="clearfix"></div>
+    <div class="clearfix" id="wrapper"></div>
 </div>
 <!-- end #wrapper -->
 
@@ -138,9 +133,6 @@
                 <a href="#">&#xf08c;</a>
                 <a href="#">&#xf0d2;</a>
                 <a href="#">&#xf166;</a>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 footer-links">
-                <a href="contact.html">Liên hệ</a>
             </div>
         </div>
     </div>

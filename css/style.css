@@ -54,13 +54,18 @@ h2 {
 }
 
 .fa {
-    font-family: 'FontAwesome';
+    font-family: 'FontAwesome', sans-serif;
 }
 
 #content {
     margin-top: 180px;
     margin-left: 50px;
     /*margin-left: -10px*/
+}
+
+#content-has-find {
+    margin-top: -350px;
+    margin-left: 50px;
 }
 
 strong {
@@ -256,7 +261,7 @@ header {
 }
 
 .button span {
-    font-family: 'FontAwesome';
+    font-family: 'FontAwesome',sans-serif;
     margin-right: 5px;
 }
 
@@ -272,6 +277,11 @@ header {
     background: #2aae4a;
 }
 
+.button:hover {
+    text-decoration: none;
+    color: #fffdf0;
+}
+
 button,
 html input[type="button"],
 input[type="reset"],
@@ -283,6 +293,7 @@ input[type="submit"] {
 }
 
 html input[type="text"],
+html input[type="password"],
 textarea {
     border: 0;
     font-family: 'Solomon Normal', sans-serif;
@@ -297,7 +308,7 @@ input[type="submit"] {
     padding: 7px 20px;
 }
 
-input[type="text"] {
+input[type="text"], input[type='password'] {
     padding: 10px 20px;
 }
 
@@ -1257,6 +1268,7 @@ div.pp_default .pp_details {
 
 .entry-title,
 .post-title {
+    height: 50px;
     margin-bottom: 0;
     color: #2aae4a;
     font-size: 18px;
@@ -1270,6 +1282,12 @@ div.pp_default .pp_details {
 .entry-title a,
 .post-title a {
     color: #2aae4a;
+}
+
+.textSpeech {
+    height: fit-content;
+    font-size: 30px;
+    color: #d9534f;
 }
 
 .intro {
@@ -1660,4 +1678,32 @@ div.pp_default .pp_details {
     .logo {
         max-width: 100%;
     }
+}
+
+/*----------------------------find----------------*/
+.find {
+    background: url(../images/slider2x.png) no-repeat;
+    background-size: 100% 100%;
+    margin-top: 250px;
+    margin-left: 800px;
+    width: 400px;
+    height: 280px;
+    font: 18px "Comic Sans MS", sans-serif;
+}
+
+.find div {
+    position: relative;
+    top: 160px;
+    left: 50px;
+    width: 300px;
+}
+
+.find [type="text"] {
+    background: #fffdf0;
+    border: 1px solid #d9534f;
+}
+
+.find [type="text"]:active {
+    background: #fffdf0;
+    border: 1px solid #d9534f;
 }
