@@ -15,9 +15,6 @@
 
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen">
     <link href="css/font-awesome.css" type="text/css" rel="stylesheet" media="screen">
-
-    <script src="js/modernizr.js"></script>
-    <script src="js/respond.js"></script>
 </head>
 <body>
 <div class="container">
@@ -70,7 +67,7 @@
                 <div class="dropdown-2-content">
                     <div>
                         <a href="info.html">Thông tin</a>
-                        <a href="login.html">Đăng xuất</a>
+                        <a href="login.html" onclick="localStorage.clear()">Đăng xuất</a>
                     </div>
                 </div>
             </div>
@@ -91,27 +88,27 @@
         <div class="content-bg">
             <div class="separator"></div>
 
-            <form>
-                <div class="col-6">
-                    <input type="text" name="fullName" placeholder="Your full name"/>
-                </div>
-                <div class="col-6">
-                    <input type="text" name="age" placeholder="Your DoB"/>
-                </div>
-                <div class="col-6">
-                    <input type="text" name="parentFullName" placeholder="Your address"/>
-                </div>
-                <div class="col-6">
-                    <input type="text" name="phone" placeholder="Your mom/dad's phone"/>
-                </div>
-                <div class="col-6">
-                    <input type="text" name="email" placeholder="Your mom/dad's email"/>
-                </div>
-                <br>
-                <div class="col-12">
-                    <a href="info.html" class="button red">Ghi nhận và quay lại trang cá nhân</a>
-                </div>
-            </form>
+
+            <div class="col-6">
+                <input type="text" id="fullName" name="fullName" placeholder="Your full name"/>
+            </div>
+            <div class="col-6">
+                <input type="text" id="dob" name="dob" placeholder="Your DoB"/>
+            </div>
+            <div class="col-6">
+                <input type="text" id="address" name="address" placeholder="Your address"/>
+            </div>
+            <div class="col-6">
+                <input type="text" id="phone" name="phone" placeholder="Your mom/dad's phone"/>
+            </div>
+            <div class="col-6">
+                <input type="text" id="email" name="email" placeholder="Your mom/dad's email"/>
+            </div>
+            <br>
+            <div class="col-12">
+                <input class="button red" type="submit" value="Submit" onclick="updateAccount()"/>
+            </div>
+
             <div class="clearfix"></div>
         </div>
 
@@ -148,7 +145,7 @@
 
 <script src="js/jquery-1.10.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/components/checkLog.js"></script>
+<script src="js/components/updateProfile.js"></script>
 </body>
 </html>

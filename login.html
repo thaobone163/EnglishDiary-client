@@ -15,9 +15,6 @@
 
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen">
   <link href="css/font-awesome.css" type="text/css" rel="stylesheet" media="screen">
-
-  <script src="js/modernizr.js"></script>
-  <script src="js/respond.js"></script>
 </head>
 <body>
 <div class="container">
@@ -86,17 +83,17 @@
     <div class="content-bg">
       <div class="separator"></div>
 
-      <form>
+<!--      <form>-->
         <div class="col-6">
-          <input type="text" name="username" placeholder="Username"/>
+          <input type="text" id="username" name="username" placeholder="Username"/>
         </div>
         <div class="col-6">
-          <input type="password" name="password" placeholder="Password"/>
+          <input type="password" id="password" name="password" placeholder="Password"/>
         </div>
         <div class="col-12">
-          <input class="button red" type="submit" value="Login"/>
+          <input class="button red" type="submit" value="Login" onclick="sendAccount()"/>
         </div>
-      </form>
+<!--      </form>-->
       <div class="clearfix"></div>
     </div>
 
@@ -130,7 +127,6 @@
 
 <script src="js/jquery-1.10.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/components/login.js"></script>
 </body>
 </html>

@@ -15,9 +15,6 @@
 
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen">
     <link href="css/font-awesome.css" type="text/css" rel="stylesheet" media="screen">
-
-    <script src="js/modernizr.js"></script>
-    <script src="js/respond.js"></script>
 </head>
 <body>
 <div class="container">
@@ -86,32 +83,30 @@
         <div class="content-bg">
             <div class="separator"></div>
 
-            <form>
-                <div class="col-6">
-                    <input type="text" name="fullName" placeholder="Your full name"/>
-                </div>
-                <div class="col-6">
-                    <input type="text" name="age" placeholder="Your DoB"/>
-                </div>
-                <div class="col-6">
-                    <input type="text" name="parentFullName" placeholder="Your address"/>
-                </div>
-                <div class="col-6">
-                    <input type="text" name="phone" placeholder="Your mom/dad's phone"/>
-                </div>
-                <div class="col-6">
-                    <input type="text" name="email" placeholder="Your mom/dad's email"/>
-                </div>
-                <div class="col-6">
-                    <input type="text" name="username" placeholder="Username"/>
-                </div>
-                <div class="col-6">
-                    <input type="password" name="password" placeholder="Password"/>
-                </div>
-                <div class="col-12">
-                    <a href="login.html" class="button red">Submit and login</a>
-                </div>
-            </form>
+            <div class="col-6">
+                <input type="text" id="fullName" name="fullName" placeholder="Your full name"/>
+            </div>
+            <div class="col-6">
+                <input type="text" id="dob" name="dob" placeholder="Your DoB"/>
+            </div>
+            <div class="col-6">
+                <input type="text" id="address" name="address" placeholder="Your address"/>
+            </div>
+            <div class="col-6">
+                <input type="text" id="phone" name="phone" placeholder="Your mom/dad's phone"/>
+            </div>
+            <div class="col-6">
+                <input type="text" id="email" name="email" placeholder="Your mom/dad's email"/>
+            </div>
+            <div class="col-6">
+                <input type="text" id="username" name="username" placeholder="Username"/>
+            </div>
+            <div class="col-6">
+                <input type="password" id="password" name="password" placeholder="Password"/>
+            </div>
+            <div class="col-12">
+                <input class="button red" type="submit" value="Submit and Login" onclick="createAccount()"/>
+            </div>
             <div class="clearfix"></div>
         </div>
 
@@ -145,7 +140,6 @@
 
 <script src="js/jquery-1.10.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/components/signUp.js"></script>
 </body>
 </html>

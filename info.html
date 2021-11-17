@@ -15,9 +15,6 @@
 
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen">
     <link href="css/font-awesome.css" type="text/css" rel="stylesheet" media="screen">
-
-    <script src="js/modernizr.js"></script>
-    <script src="js/respond.js"></script>
 </head>
 <body>
 <div class="container">
@@ -70,7 +67,7 @@
                 <div class="dropdown-2-content">
                     <div>
                         <a href="info.html">Thông tin</a>
-                        <a href="login.html">Đăng xuất</a>
+                        <a href="login.html" onclick="localStorage.clear()">Đăng xuất</a>
                     </div>
                 </div>
             </div>
@@ -90,12 +87,12 @@
 
         <div class="content-bg">
             <div class="col-lg-6 col-sm-12" style="font-size: 18px; font-family: 'Comic Sans MS', sans-serif">
-                <strong>ID: </strong>1<br><br>
-                <strong>Họ và tên bé: </strong>Thao Bone <br><br>
-                <strong>Ngày sinh: </strong>2001-03-16<br><br>
-                <strong>Địa chỉ: </strong>Hà Nội<br><br>
-                <strong>Số điện thoại của cha/mẹ: </strong>0836151700 <br><br>
-                <strong>Email của cha/mẹ: </strong>hinto73@gmail.com<br><br>
+                <strong>ID: </strong><p id="id"></p>
+                <strong>Họ và tên bé: </strong><p id="fullName"></p>
+                <strong>Ngày sinh: </strong><p id="dob"></p>
+                <strong>Địa chỉ: </strong><p id="address"></p>
+                <strong>Số điện thoại của cha/mẹ: </strong><p id="phone"></p>
+                <strong>Email của cha/mẹ: </strong><p id="email"></p><br>
             </div>
             <div class="col-lg-6 col-sm-12">
                 <img src="images/inf.webp" alt="" class="img-border" style="height: 250px; width: 250px"/>
@@ -146,8 +143,7 @@
 
 <script src="js/jquery-1.10.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/gmaps.js"></script>
+<script src="js/components/checkLog.js"></script>
+<script src="js/components/profile.js"></script>
 </body>
 </html>

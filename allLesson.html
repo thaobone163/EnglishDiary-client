@@ -16,8 +16,6 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen">
     <link href="css/font-awesome.css" type="text/css" rel="stylesheet" media="screen">
 
-    <script src="js/modernizr.js"></script>
-    <script src="js/respond.js"></script>
 </head>
 <body>
 <div class="container" id="wrapper">
@@ -70,7 +68,7 @@
                 <div class="dropdown-2-content">
                     <div>
                         <a href="info.html">Thông tin</a>
-                        <a href="login.html">Đăng xuất</a>
+                        <a href="login.html" onclick="localStorage.clear()">Đăng xuất</a>
                     </div>
                 </div>
             </div>
@@ -88,27 +86,10 @@
         </div>
 
         <div class="content-bg">
-            <h2 class="entry-title post-title">Topic: Alphabet</h2><br>
-            <p align="justify">Bài học đầu tiên của chúng ta hôm nay là "bảng chữ cái tiếng Anh" nhé các bé! Cùng
-                English Diary bắt đầu học nào!!</p>
-
-            <img src="images/topic/alphabet.jpg" alt="" class="img-border intro"/>
-
-            <p> Bảng chữ cái tiếng Anh gồm 26 chữ cái. Đây là bài học cơ bản nhất, giúp các bé nhận diện
-                các mặt chữ đơn giản và dễ ghi nhớ!
-            </p>
+            <h2 class="entry-title post-title" style="font-size: 26px; color: #d5c651" id="topic"></h2><br>
+            <img src="" class="img-border intro" id="img"/>
             <div class="separator"></div>
-            <div class="gallery">
-                <div class="col-lg-6 col-sm-12" style="width: 800px">
-                    <h2 class="entry-title post-title textSpeech"><a href="lesson.html">lesson 1: alphabet</a></h2><br>
-                </div>
-                <div class="clearfix"></div>
-                <div class="clearfix"></div>
-                <div class="col-lg-6 col-sm-12" style="width: 800px">
-                    <h2 class="entry-title post-title textSpeech"><a href="lesson.html">lesson 2: hello</a></h2>
-                </div>
-                <div class="clearfix"></div>
-            </div>
+            <div class="gallery"></div>
             <div class="clearfix"></div>
         </div>
 
@@ -145,8 +126,8 @@
 
 <script src="js/jquery-1.10.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/components/checkLog.js"></script>
 <script src="js/text-to-speech.js"></script>
+<script src="js/components/lessons.js"></script>
 </body>
 </html>
