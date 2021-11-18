@@ -80,8 +80,8 @@
     <!-- page content area -->
     <div class="find">
         <div>
-            <p>Tìm phim</p>
-            <input type="text" id="typing">
+            <input type="text" id="typing" placeholder="Tìm phim">
+            <input type="button" id="find" value="Find" onclick="findMovie()">
         </div>
     </div>
     <section id="content-has-find" class="col-lg-7 col-md-8 col-sm-12">
@@ -89,114 +89,15 @@
             <h1>MOVIES</h1>
         </div>
         <div class="content-bg">
-            <div class="page 1">
-                <p align="center" style="font-size: 18px">
-                    Cùng học và chơi với những mẩu chuyện ngắn bằng Tiếng Anh nhé! <br>
-                    Chúc các bé học thật vui!!!
-                </p>
-                <div class="separator"></div>
-
-                <div class="col-lg-6 col-sm-12">
-                    <h2 class="entry-title post-title"><a href="movie.html">Movie 1: My name's Gogo</a></h2>
-                    <div class="post-meta mg-b10">
-                        <a href="movie.html"><span class="timestamp updated">Tên mình là Gogo</span></a>
-                    </div>
-                    <img src="https://diendantienganh.com/uploads/ha/gogo%20's%20english/gogo2.gif" alt="" class="img-border"/>
-                    <a href="movie.html" class="button blue"><span>&#xf138;</span>LET'S
-                        GO!</a>
-                    <div class="separator"></div>
-                </div>
-
-                <div class="col-lg-6 col-sm-12">
-                    <h2 class="entry-title post-title"><a href="movie.html">Movie 1: My name's Gogo</a></h2>
-                    <div class="post-meta mg-b10">
-                        <a href="movie.html"><span class="timestamp updated">Tên mình là Gogo</span></a>
-                    </div>
-                    <img src="https://diendantienganh.com/uploads/ha/gogo%20's%20english/gogo2.gif" alt="" class="img-border"/>
-                    <a href="movie.html" class="button blue"><span>&#xf138;</span>LET'S
-                        GO!</a>
-                    <div class="separator"></div>
-                </div>
-
-                <div class="clearfix"></div>
-
-                <div class="col-lg-6 col-sm-12">
-                    <h2 class="entry-title post-title"><a href="movie.html">Movie 1: My name's Gogo</a></h2>
-                    <div class="post-meta mg-b10">
-                        <a href="movie.html"><span class="timestamp updated">Tên mình là Gogo</span></a>
-                    </div>
-                    <img src="https://diendantienganh.com/uploads/ha/gogo%20's%20english/gogo2.gif" alt="" class="img-border"/>
-                    <a href="movie.html" class="button blue"><span>&#xf138;</span>LET'S
-                        GO!</a>
-                    <div class="separator"></div>
-                </div>
-
-                <div class="col-lg-6 col-sm-12">
-                    <h2 class="entry-title post-title"><a href="movie.html">Movie 1: My name's Gogo</a></h2>
-                    <div class="post-meta mg-b10">
-                        <a href="movie.html"><span class="timestamp updated">Tên mình là Gogo</span></a>
-                    </div>
-                    <img src="https://diendantienganh.com/uploads/ha/gogo%20's%20english/gogo2.gif" alt="" class="img-border"/>
-                    <a href="movie.html" class="button blue"><span>&#xf138;</span>LET'S
-                        GO!</a>
-                    <div class="separator"></div>
-                </div>
-                <div class="clearfix"></div>
+            <p align="center" style="font-size: 18px">
+                Cùng học và chơi với những mẩu chuyện ngắn bằng Tiếng Anh nhé! <br>
+                Chúc các bé học thật vui!!!
+            </p>
+            <div class="separator"></div>
+            <div class="allMovie">
+                <script src="js/components/allMovie.js"></script>
             </div>
-            <div class="page 2">
-                <p align="center" style="font-size: 18px">
-                    Cùng học và chơi với những mẩu phim ngắn bằng Tiếng Anh nhé! <br>
-                    Chúc các bé học thật vui!!!
-                </p>
-                <div class="separator"></div>
-
-                <div class="col-lg-6 col-sm-12">
-                    <h2 class="entry-title post-title"><a href="movie.html">Movie 1: My name's Gogo</a></h2>
-                    <div class="post-meta mg-b10">
-                        <a href="movie.html"><span class="timestamp updated">Tên mình là Gogo</span></a>
-                    </div>
-                    <img src="https://diendantienganh.com/uploads/ha/gogo%20's%20english/gogo2.gif" alt="" class="img-border"/>
-                    <a href="movie.html" class="button blue"><span>&#xf138;</span>LET'S
-                        GO!</a>
-                    <div class="separator"></div>
-                </div>
-
-                <div class="col-lg-6 col-sm-12">
-                    <h2 class="entry-title post-title"><a href="movie.html">Movie 1: My name's Gogo</a></h2>
-                    <div class="post-meta mg-b10">
-                        <a href="movie.html"><span class="timestamp updated">Tên mình là Gogo</span></a>
-                    </div>
-                    <img src="https://diendantienganh.com/uploads/ha/gogo%20's%20english/gogo2.gif" alt="" class="img-border"/>
-                    <a href="movie.html" class="button blue"><span>&#xf138;</span>LET'S
-                        GO!</a>
-                    <div class="separator"></div>
-                </div>
-
-                <div class="clearfix"></div>
-
-                <div class="col-lg-6 col-sm-12">
-                    <h2 class="entry-title post-title"><a href="movie.html">Movie 1: My name's Gogo</a></h2>
-                    <div class="post-meta mg-b10">
-                        <a href="movie.html"><span class="timestamp updated">Tên mình là Gogo</span></a>
-                    </div>
-                    <img src="https://diendantienganh.com/uploads/ha/gogo%20's%20english/gogo2.gif" alt="" class="img-border"/>
-                    <a href="movie.html" class="button blue"><span>&#xf138;</span>LET'S
-                        GO!</a>
-                    <div class="separator"></div>
-                </div>
-
-                <div class="col-lg-6 col-sm-12">
-                    <h2 class="entry-title post-title"><a href="movie.html">Movie 1: My name's Gogo</a></h2>
-                    <div class="post-meta mg-b10">
-                        <a href="movie.html"><span class="timestamp updated">Tên mình là Gogo</span></a>
-                    </div>
-                    <img src="https://diendantienganh.com/uploads/ha/gogo%20's%20english/gogo2.gif" alt="" class="img-border"/>
-                    <a href="movie.html" class="button blue"><span>&#xf138;</span>LET'S
-                        GO!</a>
-                    <div class="separator"></div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
+            <div class="clearfix"></div>
             <div class="col-12">
                 <a class="button green pull-left" onclick="plusDivs(-1)" ><span>&#xf137;</span>Older Movies</a>
                 <a class="button green pull-right" onclick="plusDivs(1)" ><span>&#xf138;</span>Newer Movies</a>
@@ -239,22 +140,29 @@
 <script src="js/components/checkLog.js"></script>
 <script>
     let slideIndex = 1;
+    function myFunction() {
+        setTimeout(showDivs, 600);
+    }
+    myFunction();
     showDivs(slideIndex);
 
     function plusDivs(n) {
         // if ((slideIndex !== 0 && n === -1) || (slideIndex !== slideIndex.l && n === 1))
         showDivs(slideIndex += n);
     }
-
     function showDivs(n) {
         let i;
         let x = document.getElementsByClassName("page");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
         }
-        x[slideIndex-1].style.display = "block";
+        x[slideIndex - 1].style.display = "block";
     }
 </script>
 </body>

@@ -52,3 +52,40 @@ fetch(`${url}/vocabulary/show/${id}`, {
         document.querySelector("#all").appendChild(div);
     }
 })
+
+const user = localStorage.getItem('userId')
+fetch(`${url}/progress/status/${user}/${id}`, {
+    method: "GET",
+    headers: headersList
+}).then(function (response) {
+    return response.json();
+}).then(function (data) {
+    console.log(data);
+    const {trangthai} = data;
+    if(trangthai === 1) {
+        document.getElementById('progress').innerHTML = "Bé đã hoàn thành bài học";
+    } else {
+        document.getElementById('progress').innerHTML = "Hoàn thành bài học";
+
+    }
+})
+
+function doneThis() {
+    const newStatus = document.getElementById('progress').innerHTML === "Hoàn thành bài học"? 1 : -1;
+    fetch(`${url}/progress/update`, {
+        method: "POST",
+        body: JSON.stringify({
+            "ID_nguoihoc": user,
+            "ID_baihoc": id,
+            "trangthai": newStatus
+        }),
+        headers: headersList
+    }).then(function (response) {
+        return response.json();
+    }).then(function (data) {
+        console.log(data);
+        window.location.reload();
+    });
+}
+
+

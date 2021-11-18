@@ -90,12 +90,12 @@
             <div class="gallery">
                 <div id="all"></div>
                 <div class="clearfix"></div>
-                <a class="button red pull-right" onclick="submit(this)">Hoàn thành bài học</a>
+                <a class="button red pull-right" id="progress" onclick="doneThis()">Hoàn thành bài học</a>
                 <div class="clearfix"></div>
             </div>
             <div class="clearfix"><br/></div>
             <div class="col-12">
-                <a href="basic-course.html" class="button green pull-left"><span>&#xf137;</span>Quay lại khóa học</a>
+                <button class="button green pull-left" onclick="window.history.back()"><span>&#xf137;</span>Quay lại trang học</button>
                 <a href="more.html" class="button green pull-right"><span>&#xf138;</span>Giải trí</a>
             </div>
             <div class="clearfix"></div>
@@ -137,15 +137,15 @@
 <script src="js/components/checkLog.js"></script>
 <script src="js/components/lessonContent.js"></script>
 <script src="js/text-to-speech.js"></script>
-<script>
-    function submit(event) {
-        event.classList.toggle("done");
-        if(event.classList.contains("done")) {
-            event.innerHTML = `Bé đã hoàn thành bài học`;
-        } else {
-            event.innerHTML = `Hoàn thành bài học`;
-        }
-    }
-</script>
+<!--<script>-->
+<!--    function submit(event) {-->
+<!--        event.classList.toggle("done");-->
+<!--        if(event.classList.contains("done")) {-->
+<!--            event.innerHTML = `Bé đã hoàn thành bài học`;-->
+<!--        } else {-->
+<!--            event.innerHTML = `Hoàn thành bài học`;-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
 </body>
 </html>

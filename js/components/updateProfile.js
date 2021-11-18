@@ -5,6 +5,27 @@ let headersList = {
     "Content-Type": "application/json"
 }
 
+const id = localStorage.getItem('userId');
+
+fetch(`${url}/profile/id/${id}`, {
+    method: "GET",
+    headers: headersList
+}).then(function (response) {
+    return response.json();
+}).then(function (data) {
+    console.log(data);
+    const {fullname} = data;
+    const {email} = data;
+    const {sdt} = data;
+    const {ngaysinh} = data;
+    const {diachi} = data;
+    document.getElementById('fullName').value = fullname;
+    document.getElementById('dob').value = ngaysinh;
+    document.getElementById('address').value = diachi;
+    document.getElementById('phone').value = sdt;
+    document.getElementById('email').value = email;
+})
+
 function updateAccount() {
     const id = localStorage.getItem('userId');
     const fullName = document.getElementById("fullName").value;

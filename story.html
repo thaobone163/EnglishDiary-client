@@ -82,56 +82,24 @@
     <section id="content" class="col-lg-7 col-md-8 col-sm-12">
 
         <div class="cloud">
-            <h1>Story 1: The Ugly Ducking</h1>
+            <h1 id="title"></h1>
         </div>
 
         <div class="content-bg">
-            <strong style="font-size: 30px; font-family: 'Comic Sans MS',sans-serif">Chú vịt xấu xí</strong>
             <div class="clearfix"></div>
             <div class="clearfix"></div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TyrmcD8Yml0"
+            <iframe id="link" width="560" height="315" src=""
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             <div class="storyContent">
                 <strong> Nội dung câu chuyện:</strong><br>
-                <p>
-                    It is a beautiful summer day. The sun shines warmly on an old house near a river. Behind the house a
-                    mother duck is sitting on ten eggs. "Tchick." One by one all the eggs break open.
-                    All except one. This one is the biggest egg of all.<br>
-                    Mother duck sits and sits on the big egg. At last it breaks open, "Tchick, tchick!"
-                    Out jumps the last baby duck. It looks big and strong. It is grey and ugly.
-                    The next day mother duck takes all her little ducks to the river. She jumps into it. All her baby
-                    ducks
-                    jump in. The big ugly duckling jumps in too.
-                    They all swim and play together. The ugly duckling swims better than all the other ducklings.
-                    - Quack, quack! Come with me to the farm yard! - says mother duck to her baby ducks and they all
-                    follow
-                    her there.<br>
-                    The farm yard is very noisy. The poor duckling is so unhappy there. The hens peck him, the rooster
-                    flies
-                    at him, the ducks bite him, the farmer kicks him.
-                    At last one day he runs away. He comes to a river. He sees many beautiful big birds swimming there.
-                    Their feathers are so white, their necks so long, their wings so pretty. The little duckling looks
-                    and
-                    looks at them. He wants to be with them. He wants to stay and watch them. He knows they are swans.
-                    Oh,
-                    how he wants to be beautiful like them.
-                    Now it is winter. Everything is white with snow. The river is covered with ice. The ugly duckling is
-                    very cold and unhappy.<br>
-                    Spring comes once again. The sun shines warmly. Everything is fresh and green.
-                    One morning the ugly duckling sees the beautiful swans again. He knows them. He wants so much to
-                    swim
-                    with them in the river. But he is afraid of them. He wants to die. So he runs into the river. He
-                    looks
-                    into the water. There in the water he sees a beautiful swan. It is he! He is no more an ugly
-                    duckling.
-                    He is a beautiful white swan.
-                </p>
+                <p id="contentStory"></p>
+                <p id="translate"></p>
                 <div class="clearfix"></div>
                 <div class="col-12">
-                    <button class="button green pull-left translate" onclick="translateStory(this)">Dịch câu
-                        chuyện
+                    <button class="button green pull-left" id="button" onclick="translateStory()">
+                        Dịch câu chuyện
                     </button>
                 </div>
                 <div class="clearfix"></div>
@@ -178,58 +146,6 @@
 <script src="js/jquery-1.10.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/components/checkLog.js"></script>
-<script>
-    function translateStory(event) {
-        event.parentElement.parentElement.querySelector("p").classList.toggle("translate");
-        if (event.parentElement.parentElement.querySelector("p").classList.contains("translate")) {
-            event.innerHTML = `Xem lời kể tiếng Anh`;
-            event.parentElement.parentElement.querySelector("p").innerHTML = `Đó là một ngày mùa hè đẹp.
-            Nắng tỏa nắng ấm trên ngôi nhà cổ kính gần sông. Sau nhà một con vịt mẹ đang ngồi ấp mười quả trứng.
-            "Chậc chậc chậc." Từng quả trứng vỡ ra.Tất cả, ngoại trừ một. Đây là quả trứng lớn nhất trong tất cả. <br>
-            Vịt mẹ ngồi ấp quả trứng lớn. Cuối cùng, nó mở ra, "Tchick, tchick!"
-            Ra ngoài nhảy con vịt con cuối cùng. Nó trông lớn và mạnh mẽ. Nó có màu xám và xấu xí.
-            Ngày hôm sau, vịt mẹ đem tất cả đàn vịt con của mình ra sông. Cô ấy nhảy vào đó. Tất cả vịt con của cô ấy nhảy vào. Vịt con xấu xí to lớn cũng nhảy vào.
-            Tất cả đều bơi và chơi cùng nhau. Vịt con xấu xí bơi giỏi hơn tất cả những con vịt con khác.
-            - Quạc quạc! Hãy cùng tôi đến sân trang trại! - Vịt mẹ nói với vịt con và tất cả chúng đều theo mẹ đến đó.<br>
-            Sân trang trại rất ồn ào. Chú vịt con tội nghiệp ở đó thật bất hạnh. Gà mái mổ anh ta, gà trống bay vào anh ta, vịt cắn anh ta, người nông dân đá anh ta.
-            Cuối cùng một ngày anh ta bỏ trốn. Anh ấy đến một con sông. Anh ta nhìn thấy nhiều con chim lớn xinh đẹp đang bơi ở đó. Lông của chúng rất trắng, cổ dài, cánh rất đẹp. Vịt con nhìn và nhìn chúng. Anh ấy muốn ở bên họ. Anh ấy muốn ở lại và xem chúng. Anh ấy biết chúng là thiên nga. Ôi, anh ấy muốn xinh đẹp như họ làm sao.
-            Bây giờ đang là mùa đông. Mọi thứ đều trắng xóa với tuyết. Dòng sông được bao phủ bởi băng. Vịt con xấu xí rất lạnh lùng và bất hạnh.<br>
-            Mùa xuân lại đến một lần nữa. Mặt trời tỏa sáng ấm áp. Mọi thứ đều tươi xanh. Một buổi sáng vịt con xấu xí gặp lại những con thiên nga xinh đẹp. Anh ấy biết họ. Anh ấy rất muốn bơi cùng họ trên sông. Nhưng anh ấy sợ chúng. Anh ấy muốn chết. Vì vậy, anh ta chạy xuống sông. Anh ấy nhìn xuống nước. Ở đó dưới nước, anh ta nhìn thấy một con thiên nga xinh đẹp. Là anh ấy! Anh ta không còn là một chú vịt con xấu xí nữa. Anh ấy là một con thiên nga trắng xinh đẹp.`
-
-        } else {
-            event.innerHTML = `Dịch câu chuyện`;
-            event.parentElement.parentElement.querySelector("p").innerHTML = `It is a beautiful summer day. The sun
-                    shines warmly on an old house near a river. Behind the house a
-                    mother duck is sitting on ten eggs. "Tchick." One by one all the eggs break open.
-                    All except one. This one is the biggest egg of all.<br>
-                    Mother duck sits and sits on the big egg. At last it breaks open, "Tchick, tchick!"
-                    Out jumps the last baby duck. It looks big and strong. It is grey and ugly.
-                    The next day mother duck takes all her little ducks to the river. She jumps into it. All her baby
-                    ducks jump in. The big ugly duckling jumps in too.
-                    They all swim and play together. The ugly duckling swims better than all the other ducklings.
-                    - Quack, quack! Come with me to the farm yard! - says mother duck to her baby ducks and they all
-                    follow her there.<br>
-                    The farm yard is very noisy. The poor duckling is so unhappy there. The hens peck him, the rooster
-                    flies
-                    at him, the ducks bite him, the farmer kicks him.
-                    At last one day he runs away. He comes to a river. He sees many beautiful big birds swimming there.
-                    Their feathers are so white, their necks so long, their wings so pretty. The little duckling looks
-                    and
-                    looks at them. He wants to be with them. He wants to stay and watch them. He knows they are swans.
-                    Oh,
-                    how he wants to be beautiful like them.
-                    Now it is winter. Everything is white with snow. The river is covered with ice. The ugly duckling is
-                    very cold and unhappy.<br>
-                    Spring comes once again. The sun shines warmly. Everything is fresh and green.
-                    One morning the ugly duckling sees the beautiful swans again. He knows them. He wants so much to
-                    swim
-                    with them in the river. But he is afraid of them. He wants to die. So he runs into the river. He
-                    looks
-                    into the water. There in the water he sees a beautiful swan. It is he! He is no more an ugly
-                    duckling.
-                    He is a beautiful white swan.`
-        }
-    }
-</script>
+<script src="js/components/story.js"></script>
 </body>
 </html>
