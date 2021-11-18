@@ -1,5 +1,5 @@
-// const url = 'https://englishdiary-web-server.herokuapp.com'
-const url = 'http://localhost:5000'
+const url = 'https://englishdiary-web-server.herokuapp.com'
+// const url = 'http://localhost:5000'
 
 let headersList = {
     "Content-Type": "application/json"

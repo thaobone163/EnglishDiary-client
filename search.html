@@ -37,34 +37,39 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <div class="choose">
                     <div>
-                        <a href="">Trang chủ</a>
+                        <a href="index.html">Trang chủ</a>
                     </div>
                     <div class="dropdown-1">
                         <a href="">Khóa học</a>
                         <div class="dropdown-1-content">
-                            <a href="">Cơ bản</a>
-                            <a href="">Nâng cao</a>
+                            <a href="basic-course.html">Cơ bản</a>
+                            <a href="Advanced-course.html">Nâng cao</a>
                         </div>
                     </div>
                     <div>
-                        <a href="">Lộ trình</a>
+                        <a href="progress.html">Lộ trình</a>
                     </div>
                     <div class="dropdown-1">
                         <a href="">Học & Chơi</a>
                         <div class="dropdown-1-content">
-                            <a href="">Đọc truyện</a>
-                            <a href="">Phim ngắn</a>
-                            <a href="">Bài hát</a>
+                            <a href="readStories.html">Đọc truyện</a>
+                            <a href="watchFilm.html">Phim ngắn</a>
+                            <a href="listenMusic.html">Bài hát</a>
                         </div>
                     </div>
-                    <div>
-                        <a href="">Tra từ nhanh</a>
+                    <div class="active">
+                        <a href="search.html">Tra từ nhanh</a>
                     </div>
                 </div>
             </div>
-
             <div id="info" class="dropdown-2">
-                <a href="sign-up.html">Sign up</a>
+                <a href="">Cá nhân</a>
+                <div class="dropdown-2-content">
+                    <div>
+                        <a href="info.html">Thông tin</a>
+                        <a href="login.html" onclick="localStorage.clear()">Đăng xuất</a>
+                    </div>
+                </div>
             </div>
             <!-- /.navbar-collapse -->
         </nav>
@@ -82,7 +87,15 @@
 
         <div class="content-bg">
             <div class="separator"></div>
-
+            <div class="col-6">
+                <input type="text" id="search" name="search" placeholder="Typing..."/>
+            </div>
+            <div class="col-12">
+                <input class="button red" type="submit" value="🔎 LOOK UP" onclick="lookUp()"/>
+            </div>
+            <div class="result">
+                <script src="js/components/search.js"></script>
+            </div>
             <div class="clearfix"></div>
         </div>
 
@@ -116,5 +129,7 @@
 
 <script src="js/jquery-1.10.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/components/checkLog.js"></script>
+<script src="js/text-to-speech.js"></script>
 </body>
 </html>
