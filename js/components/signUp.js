@@ -41,5 +41,6 @@ function createAccount() {
     }).then(function (data) {
         console.log(data)
     })
+    alert('Đăng ký thành công')
     window.location.href = 'login.html'
 }
