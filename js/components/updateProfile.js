@@ -50,5 +50,6 @@ function updateAccount() {
     }).then(function (data) {
         console.log(data);
     });
+    alert('Sửa thành công!')
     window.location.href = 'info.html'
 }
