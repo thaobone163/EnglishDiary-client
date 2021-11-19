@@ -40,7 +40,13 @@ function createAccount() {
         return response.json();
     }).then(function (data) {
         console.log(data)
+        let {message} = data;
+        if(!message) {
+            alert('Đăng ký thành công');
+            window.location.href = 'login.html';
+        } else {
+            alert('Đăng ký thất bại. Vui lòng kiểm tra lại format đăng ký!');
+            window.location.reload();
+        }
     })
-    alert('Đăng ký thành công')
-    window.location.href = 'login.html'
 }

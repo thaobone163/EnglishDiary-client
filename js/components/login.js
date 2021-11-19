@@ -26,7 +26,7 @@ function sendAccount() {
             localStorage.setItem('userId', ID_tk);
             window.location.href = 'index.html'
         } else {
-            alert(data);
+            alert('Đăng nhập không thành công. Vui lòng kiểm tra lại thông tin đăng nhập!');
             window.location.reload()
         }
     })
